@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p style="position: static; background: lightgray">
+      This is a static paragraph.
+    </p>
+    <div
+      style="
+        position: relative;
+        left: 20px;
+        background: lightblue;
+        padding: 10px;
+      "
+    >
+      I am moved 20px to the right.
+    </div>
+    <div
+      style="
+        position: relative;
+        width: 300px;
+        height: 150px;
+        background: lightgray;
+      "
+    >
+      <div
+        style="
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          background: tomato;
+          padding: 5px;
+        "
+      >
+        I am absolutely positioned inside this box.
+      </div>
+    </div>
+    <div
+      style="
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background: green;
+        padding: 10px;
+        color: white;
+      "
+    >
+      I stay fixed at the bottom right.
+    </div>
+    <h2 style="position: sticky; top: 0; background: yellow; padding: 10px">
+      I stick to the top when scrolling.
+    </h2>
+    <p>Scroll down to see the effect...</p>
+  </body>
+</html>

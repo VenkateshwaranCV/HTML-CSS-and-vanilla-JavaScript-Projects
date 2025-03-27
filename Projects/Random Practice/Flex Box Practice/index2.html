@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        display: flex;
+        background: lightgray;
+        padding: 10px;
+      }
+      .item {
+        background: tomato;
+        color: white;
+        padding: 20px;
+        margin: 5px;
+        text-align: center;
+        font-weight: bold;
+      }
+    </style>
+
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+    <!-- changing direction -->
+    <style>
+      .column-container {
+        display: flex;
+        flex-direction: column;
+        background: lightblue;
+        padding: 10px;
+      }
+    </style>
+
+    <div class="column-container">
+      <div class="item">Item A</div>
+      <div class="item">Item B</div>
+      <div class="item">Item C</div>
+    </div>
+    <!-- Justifying Content -->
+    <style>
+      .justify-container {
+        display: flex;
+        justify-content: space-between;
+        background: lightcoral;
+        padding: 10px;
+      }
+    </style>
+
+    <div class="justify-container">
+      <div class="item">One</div>
+      <div class="item">Two</div>
+      <div class="item">Three</div>
+    </div>
+    <!-- Aligning Items -->
+    <style>
+      .align-container {
+        display: flex;
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+        background: lightgreen;
+      }
+    </style>
+
+    <div class="align-container">
+      <div class="item">A</div>
+      <div class="item">B</div>
+      <div class="item">C</div>
+    </div>
+    <!-- flex-grow -->
+    <style>
+      .grow-container {
+        display: flex;
+      }
+      .grow-item:first-child {
+        flex-grow: 1;
+        background: lightblue;
+      }
+      .grow-item:last-child {
+        flex-grow: 15;
+        background: lightgreen;
+      }
+    </style>
+
+    <div class="grow-container">
+      <div class="grow-item item">Small</div>
+      <div class="grow-item item">Large</div>
+    </div>
+    <!-- flex-shrink -->
+    <style>
+      .shrink-container {
+        display: flex;
+      }
+      .shrink-item {
+        flex-shrink: 0;
+        width: 200px;
+        background: orange;
+      }
+    </style>
+
+    <div class="shrink-container">
+      <div class="shrink-item item">Don't Shrink</div>
+      <div class="shrink-item item">Don't Shrink</div>
+    </div>
+    <!-- flex-basis (Defining Initial Size) -->
+    <style>
+      .basis-container {
+        display: flex;
+      }
+      .basis-item {
+        flex-basis: 100px;
+        background: purple;
+      }
+    </style>
+
+    <div class="basis-container">
+      <div class="basis-item item">100px Wide</div>
+      <div class="basis-item item">100px Wide</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  background: turquoise;
+}
+.container {
+  border: 2px solid black;
+  width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  /*Flex box*/
+  display: flex;
+  /* flex-direction: column;
+  justify-content: space-between;
+  flex-wrap:wrap-reverse;
+  align-items: flex-end; */
+}
+
+.container .child {
+  width: 50px;
+  height: 50px;
+  background: red;
+  text-align: center;
+  margin: 5px;
+}
