@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  background: grey;
+}
+
+.clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.clip1 {
+  background: url(images/roronoa-zoro-from-one-piece-mainmc9filvnq0sj.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 46% 0, 39% 100%, 0% 100%);
+}
+
+.clip2 {
+  background: url(images/thumb-1920-1018591.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%);
+
+}
+
+.clip3 {
+  background: url(images/zoro-kb2vrvklhvqve63x.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(82% 0, 100% 0, 100% 100%, 63% 100%);
+}
+
+.container:hover .clip{ /* when you hover container -> effect on clip*/
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.container .clip:hover{ /* When you hover the clip present in the container*/
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+

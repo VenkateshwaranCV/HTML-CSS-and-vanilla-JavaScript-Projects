@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 80px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#description {
+  text-align: center;
+  margin: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
+}
+
+#survey-form {
+  text-align: center;
+  background: rgba(255, 0, 0, 0.2);
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-element {
+  margin: 10px;
+  border: solid;
+}

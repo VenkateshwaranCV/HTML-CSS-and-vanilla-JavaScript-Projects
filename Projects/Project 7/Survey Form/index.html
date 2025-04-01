@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Favourite One-Piece Characters Survey Form</h1>
+
+    <p id="description">
+      This is an initiative to find the most favourite character
+    </p>
+
+    <form id="survey-form">
+      <div class="input-element">
+        <label id="name-label">Name</label>
+        <input required id="name" type="text" placeholder="Name" />
+      </div>
+
+      <div class="input-element">
+        <label id="email-label">Email</label>
+        <input required id="email" type="email" placeholder="Email" />
+      </div>
+
+      <div class="input-element">
+        <label id="number-label">Age</label>
+        <input
+          required
+          id="number"
+          type="number"
+          min="0"
+          max="100"
+          placeholder="Age"
+        />
+      </div>
+
+      <div class="input-element">
+        <label id="dropdown">Fav Character</label>
+        <select id="dropdown">
+          <option>Luffy</option>
+          <option>Zoro</option>
+        </select>
+      </div>
+
+      <div class="input-element">
+        <label id="radio"
+          >At what chapter of One-piece are you currently in?
+        </label>
+        <label><input value="test1" name="test" type="radio" />0-300</label>
+        <label><input value="test2" name="test" type="radio" />300-800</label>
+        <label><input value="test3" name="test" type="radio" />800-1100</label>
+      </div>
+
+      <div class="input-element">
+        <label id="checkbox"
+          >At what chapter of One-piece are you currently in?
+        </label>
+        <label><input value="test1" name="test" type="checkbox" />0-300</label>
+        <label
+          ><input value="test2" name="test" type="checkbox" />300-800</label
+        >
+        <label
+          ><input value="test3" name="test" type="checkbox" />800-1100</label
+        >
+      </div>
+
+      <div class="input-element">
+        <label>Additional Comments</label>
+        <textarea id="submit" type="text"></textarea>
+      </div>
+
+      <div class="input-element">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
